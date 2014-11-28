@@ -1,0 +1,113 @@
+/* line 4, ../sass/style.scss */
+body {
+  background-color: lightgrey;
+  font-family: Arial;
+  font-size: 62.5%;
+}
+
+/* line 9, ../sass/style.scss */
+.container {
+  width: 500px;
+  margin: 100px auto auto auto;
+}
+
+/* line 14, ../sass/style.scss */
+.plaque {
+  box-sizing: border-box;
+  margin: 50px auto;
+  background-color: white;
+  padding: 15px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* line 25, ../sass/style.scss */
+img.flag {
+  height: 35px;
+  width: auto;
+}
+
+/* line 30, ../sass/style.scss */
+.number input {
+  border: 0 none;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* line 35, ../sass/style.scss */
+.canton-selector {
+  width: 90px;
+  border: 0 none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* line 45, ../sass/style.scss */
+.canton-selector::-ms-expand {
+  display: none;
+}
+/* line 49, ../sass/style.scss */
+.canton-selector .canton-choices {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 58, ../sass/style.scss */
+#plaqueLg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+/* line 63, ../sass/style.scss */
+#plaqueLg .cantonAbr, #plaqueLg .number {
+  display: inline;
+}
+/* line 66, ../sass/style.scss */
+#plaqueLg .cantonAbr:after {
+  content: "\00b7";
+  margin-left: -15px;
+}
+/* line 70, ../sass/style.scss */
+#plaqueLg .text {
+  display: inline;
+}
+/* line 73, ../sass/style.scss */
+#plaqueLg .number input {
+  width: 180px;
+}
+
+/* line 79, ../sass/style.scss */
+#plaqueBig {
+  width: 250px;
+}
+/* line 81, ../sass/style.scss */
+#plaqueBig .header {
+  display: block;
+  text-align: center;
+}
+/* line 85, ../sass/style.scss */
+#plaqueBig .header div {
+  display: inline;
+}
+/* line 88, ../sass/style.scss */
+#plaqueBig .header .cantonAbr {
+  margin: 0 8px;
+}
+/* line 91, ../sass/style.scss */
+#plaqueBig .header .canton-selector {
+  padding-left: 5px;
+}
+/* line 96, ../sass/style.scss */
+#plaqueBig .number input {
+  width: 100%;
+  text-align: center;
+}

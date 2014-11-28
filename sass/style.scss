@@ -1,0 +1,101 @@
+//VARIABLES
+$font_size : 3rem;
+
+body{
+    background-color: lightgrey;
+    font-family: Arial;
+    font-size: 62.5%;
+}
+.container{
+    width: 500px;
+    margin: 100px auto auto auto;
+}
+
+.plaque{ 
+    box-sizing: border-box;
+    margin: 50px auto;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px black;
+    font-size: $font_size;
+    font-weight: bold;    
+}
+img.flag{
+    height: 35px;
+    width: auto;
+}
+
+.number  input{
+    border: 0 none;
+    font-size: $font_size;
+    font-weight: bold;
+}
+.canton-selector{
+    width: 90px;
+    border: 0 none;
+    font-size: $font-size;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;    
+    appearance: none;
+    &::-ms-expand {
+        display: none;
+    }
+
+    .canton-choices{
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+#plaqueLg{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    .cantonAbr, .number{
+        display: inline;
+    }
+    .cantonAbr:after{
+        content: "\00b7";
+        margin-left: -15px;
+    }
+    .text{
+        display: inline;
+    }
+    .number  input{
+        width: 180px;
+    }
+
+}
+
+#plaqueBig{
+    width: 250px;
+    .header{
+        display: block;
+        text-align: center;
+
+        div{
+            display: inline;
+        }
+        .cantonAbr{
+            margin: 0 8px;
+        }
+        .canton-selector{
+            padding-left: 5px;
+        }
+    }
+    .number{
+        input{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
