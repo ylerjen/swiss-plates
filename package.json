@@ -1,0 +1,16 @@
+{
+  "name": "Test",
+  "version": "1.0",
+  "description": "plaque",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 1"
+  },
+  "keywords": [  ],
+  "author": "Yann LERJEN",
+  "license": "Copyright 2014 Vaudoise Assurance",
+  "devDependencies": {
+    "grunt-contrib-compass": "~1.0.1",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
